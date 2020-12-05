@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.audio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+audio {
+  margin-top: 40vh;
+  outline: none;
+}
+
+.custom-audio {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#uploaded-file {
+  background-color: Grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+#submit {
+  margin: 2rem 0 0 50%;
+  padding: 0.5rem 1rem;
+  transform: translateX(-50%);
+  background-color: #ffa000;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+#submit:hover {
+  filter: brightness(125%);
+}
