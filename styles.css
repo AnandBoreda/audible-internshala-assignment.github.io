@@ -56,3 +56,12 @@ label > i {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .audio {
+    flex-direction: column;
+  }
+  #bookmark {
+    margin: 5vh 0 0 1rem !important;
+  }
+}
