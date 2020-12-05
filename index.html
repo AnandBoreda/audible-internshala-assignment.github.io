@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audible by Anand Boreda</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="https://anandboreda.com/images/dp3.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 
-<body>
+<body onload="setBookmark();">
     <div class="container">
         <div class="row audio">
-            <audio src="./audios/Jerusalem Ft Nomcebo.mp3" controls></audio>
+            <audio src="./audios/Jerusalem Ft Nomcebo.mp3" id="audio" controls></audio>
+            <button id="bookmark" onclick="bmark();">Bookmark</button>
         </div>
         <div class="custom-audio">
-            <form>
-                <input type="file" id="uploaded-file" name="filename" required /> <br>
-                <input type="submit" id="submit" value="Play Uploded file" />
-            </form>
+            <label><i class="fa fa-play" aria-hidden="true" id="play" onclick="playAudio();"> Play</i></label>
+            <label><i class="fa fa-pause" aria-hidden="true" id="pause" onclick="pauseAudio();"> Pause</i></label>
+            <label><i class="fa fa-stop" aria-hidden="true" onclick="stopAudio();"> Stop</i></label>
         </div>
     </div>
-
     <script src="./scripts.js"></script>
 </body>
-
-</html>
