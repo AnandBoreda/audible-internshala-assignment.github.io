@@ -1,4 +1,5 @@
 const audio = document.getElementById("audio");
+audio.preload;
 
 const play = document.getElementById("play");
 const pause = document.getElementById("pause");
@@ -18,7 +19,10 @@ function bmark(){
     localStorage.setItem("seek",bookmark);
     console.log(bookmark);
 }
-
+// remove bookmark
+function rmbmark(){
+    localStorage.clear();
+}
 // play audio 
 function playAudio(){
     play.style.display = "none";

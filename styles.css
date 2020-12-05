@@ -31,6 +31,10 @@ audio {
   border-radius: 20px;
   background-color: #ffa000;
 }
+button,
+label > i {
+  cursor: pointer;
+}
 
 /* play pause and stop buttons */
 
